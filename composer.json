@@ -1,7 +1,7 @@
 {
     "name": "authvin/authvin",
     "description": "Authentication Management System in PHP",
-    "keywords": ["auth", "authentication", "php", "user"],
+    "keywords": ["auth", "authentication", "php", "user", "authvin"],
     "license": "MIT",
     "type": "project",
     "require": {
@@ -20,7 +20,7 @@
             "database"
         ],
         "psr-4": {
-			"AuthVin\\": "authvin/",
+			      "Authvin\\": "authvin/",
             "App\\": "app/"
         }
     },

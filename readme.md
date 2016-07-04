@@ -1,4 +1,4 @@
-# AuthVin
+# Authvin
 
 ## Requirements
 
