@@ -4,13 +4,12 @@ namespace App\Http\Controllers\Auth;
 
 use App\User;
 use Validator;
-use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
-use Authvin\Foundation\AuthenticatesUsers;
+use Authvin\Http\Controllers\AuthController as AuthvinController;
 
-class AuthController extends Controller
+class AuthController extends AuthvinController
 {
     /*
     |--------------------------------------------------------------------------
@@ -24,7 +23,6 @@ class AuthController extends Controller
     */
 
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
-    use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login / registration.
@@ -32,8 +30,6 @@ class AuthController extends Controller
      * @var string
      */
     protected $redirectTo = '/';
-
-    protected $username = 'username';
 
     /**
      * Create a new authentication controller instance.
