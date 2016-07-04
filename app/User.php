@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Illuminate\Foundation\Auth\User as Authenticatable;
+use Authvin\User as Authenticatable;
 
 class User extends Authenticatable
 {
