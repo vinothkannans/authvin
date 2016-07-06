@@ -21,4 +21,10 @@ abstract class User extends Authenticatable
     $this->save();
   }
 
+  public function confirm() {
+    $this->confirmed = true;
+    $this->confirmation_code = null;
+    $this->save();
+  }
+
 }
