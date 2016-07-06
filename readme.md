@@ -1,8 +1,17 @@
 # Authvin
 
+[![Build Status](https://travis-ci.org/authvin/authvin.svg?branch=master)](https://travis-ci.org/authvin/authvin)
+[![Latest Stable Version](https://poser.pugx.org/authvin/authvin/v/stable.svg)](https://packagist.org/packages/authvin/authvin)
+[![Latest Unstable Version](https://poser.pugx.org/authvin/authvin/v/unstable.svg)](https://packagist.org/packages/authvin/authvin)
+[![License](https://poser.pugx.org/authvin/authvin/license.svg)](https://packagist.org/packages/authvin/authvin)
+
+Authentication Management System in PHP using Laravel Framework
+
 #### Demo : http://demo.authvin.com
 
 ## Features
+
+Since we built it using Laravel you can use any of the Laravel framework's authentication features in Authvin.
 
 * Login with Username or Email address
 * Email address validation by sending confirmation mail
