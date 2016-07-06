@@ -7,17 +7,19 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\User;
 
+use Authvin\Authvin;
+
 abstract class AuthController extends Controller
 {
 
   protected $username = 'username';
 
   /**
-   * Handle a login request to the application.
-   *
-   * @param  \Illuminate\Http\Request  $request
-   * @return \Illuminate\Http\Response
-   */
+  * Handle a login request to the application.
+  *
+  * @param  \Illuminate\Http\Request  $request
+  * @return \Illuminate\Http\Response
+  */
   public function loginByEmailOrUsername(Request $request) {
     if(property_exists($this, 'username')) {
       $this->username = filter_var($request->input('login'), FILTER_VALIDATE_EMAIL) ? 'email' : 'username';
@@ -27,34 +29,24 @@ abstract class AuthController extends Controller
   }
 
   /**
-   * Handle a registration request for the application.
-   *
-   * @param  \Illuminate\Http\Request  $request
-   * @return \Illuminate\Http\Response
-   */
-  public function registerAndSendEmailConfirmation(Request $request)
-  {
-    $response = $this->register($request);
-    //$user->sendEmailConfirmation();
-    return $response;
-  }
-
-  /**
-   * Create a new user instance after a valid registration.
-   *
-   * @param  array  $data
-   * @return User
-   */
+  * Create a new user instance after a valid registration.
+  *
+  * @param  array  $data
+  * @return User
+  */
   protected function create(array $data)
   {
-      $user =  User::create([
-          'name' => $data['name'],
-          'email' => $data['email'],
-          'confirmed' => false,
-          'password' => bcrypt($data['password']),
-      ]);
-      $user->sendEmailConfirmation(Authvin::generateRandomCode());
-      return $user;
+    $app = app();
+    $confirmationCode = $app['authvin']->generateRandomCode();
+    $user =  User::create([
+      'name' => $data['name'],
+      'email' => $data['email'],
+      'confirmed' => false,
+      'confirmation_code' => $confirmationCode,
+      'password' => bcrypt($data['password']),
+    ]);
+    $user->sendEmailConfirmation($app['mailer']);
+    return $user;
   }
 
 }
