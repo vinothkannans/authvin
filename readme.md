@@ -26,8 +26,8 @@ Since we built it using Laravel you can use any of the Laravel framework's authe
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability within AuthVin, please send an e-mail to Vinoth Kannan at vinothkannan@vinkas.com. All security vulnerabilities will be promptly addressed.
+If you discover a security vulnerability within Authvin, please send an e-mail to Vinoth Kannan at vinothkannan@vinkas.com. All security vulnerabilities will be promptly addressed.
 
 ## License
 
-The AuthVin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+The Authvin is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
