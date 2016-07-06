@@ -1,5 +1,12 @@
 # Authvin
 
+#### Demo : http://demo.authvin.com
+
+## Features
+
+* Login with Username or Email address
+* Email address validation by sending confirmation mail
+
 ## Requirements
 
 * PHP >=5.5.9
