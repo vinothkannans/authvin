@@ -20,8 +20,8 @@ Since we built it using Laravel you can use any of the Laravel framework's authe
 
 ## Screenshots
 
-[![Registration](/screenshots/registration.png?raw=true)]
-[![Login](/screenshots/login.png?raw=true)]
+![Registration](/screenshots/registration.png?raw=true)
+![Login](/screenshots/login.png?raw=true)
 
 ## Requirements
 
