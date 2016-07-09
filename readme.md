@@ -18,6 +18,11 @@ Since we built it using Laravel you can use any of the Laravel framework's authe
 * Email address validation by sending confirmation mail
 * Recaptcha human verification
 
+## Screenshots
+
+[![Registration](/screenshots/registration.png?raw=true)]
+[![Login](/screenshots/login.png?raw=true)]
+
 ## Requirements
 
 * PHP >=5.5.9
