@@ -1,7 +1,5 @@
 <?php
 
-namespace Authvin;
-
 use Illuminate\Support\Str;
 
 class Authvin {

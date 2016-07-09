@@ -3,7 +3,7 @@
 namespace Authvin\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Authvin\Authvin;
+use Authvin;
 
 class AuthvinServiceProvider extends ServiceProvider
 {

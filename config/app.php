@@ -151,6 +151,11 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Socialit Service Provider
+         */
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
+        /*
          * Application Service Providers...
          */
         App\Providers\AppServiceProvider::class,
@@ -206,6 +211,7 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class,
         'Authvin' => Authvin\Support\Facades\Authvin::class,
 
     ],
