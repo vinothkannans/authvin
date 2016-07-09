@@ -23,13 +23,28 @@ Since we built it using Laravel you can use any of the Laravel framework's authe
 ![Registration](/screenshots/registration.png?raw=true)
 ![Login](/screenshots/login.png?raw=true)
 
+## Installation
+
+#### Via Composer Create-Project
+
+You may install Authvin by issuing the Composer create-project command in your terminal:
+
+`composer create-project --prefer-dist authvin/autvin myproject`
+
+## Documentation
+
+If you are facing issues or need support with Authvin then submit your request in [Issues](https://github.com/authvin/authvin/issues) section.
+
+You can always find documentation for the framework (other than Authvin related details & support) can be found on the [Laravel website](http://laravel.com/docs).
+
 ## Requirements
 
 * PHP >=5.5.9
 
-## Dependencies
+### Dependencies
 
-* [Laravel Framework](https://github.com/laravel/laravel) >= 5.2.*
+* [Laravel Framework](https://github.com/laravel/laravel) = 5.2.*
+* [Guzzle](https://github.com/guzzle/guzzle) = ^6.2
 
 ## Security Vulnerabilities
 
