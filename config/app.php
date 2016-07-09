@@ -159,6 +159,7 @@ return [
         App\Providers\RouteServiceProvider::class,
 
         Authvin\Providers\AuthvinServiceProvider::class,
+        Authvin\Providers\RecaptchaServiceProvider::class,
 
     ],
 

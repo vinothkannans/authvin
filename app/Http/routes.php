@@ -32,4 +32,7 @@ Route::get('login', 'Auth\AuthController@showLoginForm');
 Route::post('login', 'Auth\AuthController@loginByEmailOrUsername');
 Route::get('logout', 'Auth\AuthController@logout');
 
+Route::get('username', 'Auth\UsernameController@showForm');
+Route::post('username', 'Auth\UsernameController@choose');
+
 Route::get('/home', 'HomeController@index');
