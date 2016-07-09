@@ -13,8 +13,10 @@ Authentication Management System in PHP using Laravel Framework
 
 Since we built it using Laravel you can use any of the Laravel framework's authentication features in Authvin.
 
-* Login with Username or Email address
+* Choosing unique username on registration
+* Login with either username or email address
 * Email address validation by sending confirmation mail
+* Recaptcha human verification
 
 ## Requirements
 
