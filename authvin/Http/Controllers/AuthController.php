@@ -8,10 +8,13 @@ use Validator;
 use App\Http\Controllers\Controller;
 use App\User;
 
-use Authvin\Authvin;
+use Authvin;
+use Authvin\OAuth2\Social;
 
 abstract class AuthController extends Controller
 {
+
+  use Social;
 
   protected $username = 'username';
 
